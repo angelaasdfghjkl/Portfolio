@@ -77,10 +77,6 @@ h1, h2, h3, h4{
   text-align: center;
 }
 
-header {
-  background-color:#FFF5EE;
-  opacity:0.6;
-}
 
 .responsive {
   max-height: 100%;
@@ -102,9 +98,10 @@ li {
   list-style: inside;
   margin-left: auto;
   margin-right: auto;
-  width: 25em;
+  width: 50em;
   background-color:#FFF5EE;
   opacity:0.6;
+  font-size:1.5vw;
 }
 
 img {
