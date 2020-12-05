@@ -77,6 +77,10 @@ h1, h2, h3, h4{
   text-align: center;
 }
 
+header {
+  background-color:#FFF5EE;
+  opacity:0.6;
+}
 
 .responsive {
   max-height: 100%;
