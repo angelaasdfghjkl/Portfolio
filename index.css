@@ -13,16 +13,6 @@ body {
   display: block;
 }
 
-.body-index {
-  background-color: #fffcf8;
-}
-
-
-.header {
-  display: block;
-  color: #555;
-  padding: 0 20%;
-}
 
 nav {
   display: flex;
@@ -107,6 +97,7 @@ h1, h2, h3, h4{
 
 header {
   background-color:#FFF5EE;
+  display: block;
   opacity:0.6;
 }
 
@@ -120,11 +111,15 @@ header {
 p {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
+  display: block;
   width: 35em;
   background-color:#FFF5EE;
   opacity:0.6;
   font-size:1.5vw;
   text-align: center;
+  line-height: 25px;
+  font-weight: lighter;
 }
 
 li {
@@ -238,4 +233,127 @@ img {
 .flex-image {
   width: 40%;
   padding: 10px;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #747fe0;
+  margin: 5px;
+  transition: all 0.3s ease-in;
+}
+
+@media (max-width: 1000px) {
+  .nav-links {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .greeting {
+    font-size: 3em;
+  }
+}
+@media (max-width: 800px) {
+  .project-title-small {
+    font-size: 1em;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 50%;
+    top: 14%;
+    background-color: #fffcf8;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* transform: translate(100%); */
+    opacity: 0;
+    display: none;
+    /* transition: all 0.5s ease 0.2s; */
+    z-index: 1000;
+  }
+
+  .white {
+    background-color: white;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 4vw;
+  }
+
+  .flex-item-original {
+    width: 100%;
+  }
+
+  .flex-item-redesign {
+    width: 100%;
+  }
+
+  .bio {
+    width: 80%;
+    padding-right: 0;
+  }
+
+  .profile-photo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+  }
+
+  .nav-links li {
+    opacity: 1;
+  }
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.3s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(4) {
+    transition: all 0.5s ease 0.4s;
+  }
+  li.fade {
+    opacity: 1;
+  }
+}
+
+.nav-active {
+  /* transform: translate(0%); */
+  opacity: 1;
+  display: flex;
+  z-index: 1000;
+  transition: all 0.5s ease 0.2s;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(0, 11.5px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(0, -11.5px);
 }
