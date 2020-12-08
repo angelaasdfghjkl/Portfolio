@@ -303,6 +303,12 @@ img {
     padding-right: 0;
   }
 
+  p {
+    width: 35em;
+    font-size: 10px;
+    padding-right: 0;
+  }
+
   .profile-photo {
     position: relative;
     width: 100%;
