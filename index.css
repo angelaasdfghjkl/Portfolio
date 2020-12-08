@@ -307,6 +307,13 @@ img {
   font-size: 10px;
   padding-right: 0;
   }
+
+  li {
+    width: 37em;
+    font-size: 10px;
+    padding-right: 0;
+  }
+
   .profile-photo {
     position: relative;
     width: 100%;
